@@ -1,4 +1,4 @@
-## We-planner Frontend..
+## We-planner Frontend (찐)
 
 ### 👩‍💻💻
 

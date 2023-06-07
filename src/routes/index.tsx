@@ -5,6 +5,7 @@ import store from '../store';
 import PrivateRoute from './private';
 import { RoutePath } from '../constants';
 import LoginPage from '../pages/login';
+import MainPage from '../pages/main';
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,9 @@ const Router = () => {
               <Route path={RoutePath.login} element={<LoginPage />} />
             </Route>
             {/* true */}
+            <Route element={<PrivateRoute auth={false} />}>
+              <Route path={RoutePath.main} element={<MainPage />} />
+            </Route>
           </Routes>
         </QueryClientProvider>
       </Provider>
