@@ -8,7 +8,7 @@ const PrivateRoute = ({ auth }: IPrivateRoute) => {
   if (auth) {
     return !isAuthenticated ? <Navigate to={RoutePath.login} /> : <Outlet />;
   } else {
-    return !isAuthenticated ? <Outlet /> : <Navigate to={RoutePath.main} />;
+    return !isAuthenticated ? <Outlet /> : <Navigate to={RoutePath.home} />;
   }
 };
 
