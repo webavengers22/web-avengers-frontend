@@ -11,3 +11,7 @@ export const RoutePath = {
 
 export const PERMISSTION_REQUESET = 'permission-request';
 export const FIREWALL_REQUESET = 'firewall-request';
+
+export * from './component';
+export * from './color';
+export * from './theme';
